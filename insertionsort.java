@@ -33,10 +33,12 @@ class InsertionSort {
 		Scanner sc=new Scanner(System.in);  
 		//Enter size of input array
 		int p=sc.nextInt();
+		int i=0;
 		int[] arr = new int[p];  
-		for(int i=0; i<p; i++)  
+		while(i<p)  
         	{  
-            	arr[i]=sc.nextInt();  
+            	arr[i]=sc.nextInt(); 
+            	i++;
         	}
 		InsertionSort obj = new InsertionSort();
 		obj.sort(arr);
